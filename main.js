@@ -3,7 +3,7 @@ const app = Vue.createApp({
         return {
             product: 'Shoes',
             brand: 'SE 331',
-            image: './assets/images/socks_green.jpg',
+            // image: './assets/images/socks_green.jpg',
             inStock: false,
             inventory: 100,
             details: ['50% cotton', '30% wool', '20% polyester'],
@@ -21,11 +21,13 @@ const app = Vue.createApp({
         title(){
             return this.brand + '' + this.product
         },
-        image(){
-            return this.variants[this.selectedVariant].image;
+        image()
+        {
+        return this.variants[this.selectedVariant].image;
         },
-        inStock(){
-            return this.variants[this.selectedVariant].quantity;
+        inStock()
+        {
+        return this.variants[this.selectedVariant].quantity;
         }
     },
     methods: {
