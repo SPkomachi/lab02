@@ -45,6 +45,7 @@ body {
 
 .disabledimg {
     filter: grayscale(100%);
+    /* cursor: not-allowed; */
 }
 
 
