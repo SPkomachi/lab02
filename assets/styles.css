@@ -43,6 +43,11 @@ body {
     cursor: not-allowed;
 }
 
+.disabledimg {
+    filter: grayscale(100%);
+}
+
+
 h1 {
     font-size: 50px;
 }

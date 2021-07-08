@@ -18,8 +18,12 @@
 
         <div class="product-display">
             <div class="product-container">
-                <div class="product-image">
+
+                <div class="product-image" :disabled='!inStock' 
+                :class="{disabledimg: !inStock}" >
+                
                     <img :src="image">
+
                 </div>
                 <div class="product-info">
                     <h1>{{ product }}</h1>
@@ -36,7 +40,7 @@
 
                     <button class=" button " :disabled='!inStock' 
                     :class="{disabledButton: !inStock}" @click="addToCart ">Add to Cart</button>
-                    
+
                 </div>
             </div>
         </div>
