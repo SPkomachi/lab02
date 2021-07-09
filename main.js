@@ -15,7 +15,8 @@ const app = Vue.createApp({
             quantity: 0 }
             ],
             selectedVariant: 0,
-            cart: 0
+            cart: 0,
+            premium: true
         }
     },
     computed: {

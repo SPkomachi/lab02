@@ -1,7 +1,14 @@
 app.component('product-display', {
+    props: {
+        premium: {
+          type: Boolean,
+          required: true
+        }
+      },
     template: 
-      /*html*/ 
+      /*html*/     
     `<div class="product-display">
+
         <div class="product-container">
           <div class="product-image">
             <img v-bind:src="image">
